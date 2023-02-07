@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+body{ background-color: #68829e;}
+nav{ display: flex; justify-content: space-around; align-items: center; min-height: 8vh; background-color:	#68829e; font-family: 'Poppins', sans-serif;}
+.logo{ color: rgb(226, 226, 226); text-transform: uppercase; letter-spacing: 5px; font-size: 20px;}
+.nav-links{display: flex; justify-content: space-around; width: 30%; list-style: none; }
+
+.nav-links a{color: rgb(226, 226, 226); text-decoration: none; font-weight: bold; font-size: 14px;}
+
+.nav-links li{ padding: 2px; }
+
+.burger{ display: none; cursor: pointer; list-style: none; }
+
+.burger div{ width: 25px; height: 3px; background-color: rgb(226, 226, 226); margin: 5px; transition: all 0.3s ease;}
+
+.startsidabild img{ width:100%; height:700px; }
+
+.startsidatext { position: absolute; top: 150px; left: 50%; transform: translate(-50%, -50%);  font-size: xx-large; font-family: 'Poppins', sans-serif; color: white; font-weight: bold;}
+#rofiacvbild{  
+    border-radius: 40px;
+    padding: 5px;
+    width: 250px;
+}
+
+.listaaverfarenheter{
+    margin: 20px;
+    position: absolute;
+    left: 300px;
+    top: 70px;
+}
+
+#myButton { 
+     display: inline-block;  
+     border-radius: 4px;  
+     background-color: wheat;  
+     border: none;  
+     color: #FFFFFF;  
+     text-align: center;  
+     font-size: 18px;  
+     padding: 18px;  
+     width: 100px;  
+     transition: all 0.5s;  
+     cursor: pointer;  
+     margin: 15px;}
+
+
+@media screen and (max-width: 1024px)
+{
+    .nav-links{ width: 60%;}
+}
+@media screen and (max-width: 768px)
+{
+    body{ overflow-x: hidden;}
+   
+   .nav-links{ 
+       position: absolute;
+       right: 0px;
+       height: 92vh;    
+       top: 8vh;
+       background-color: #68829e;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 40%;
+       transform: translateX(100%);
+       transition: transform 0.5s ease-in;
+   }
+
+   .links:hover{ font-size: 1.1em; cursor: pointer;}
+    .nav-links li{ opacity: 0; }
+   
+    .burger{ display: block; }
+    .nav-active{ transform: translateX(0%); }
+
+    .startsidabild img{ width: 100%; }
+    
+    .startsidatext { position: absolute; top: 100px; left: 150px; font-size: large; font-family: 'Poppins', sans-serif; color: white;} 
+
+    .heading{ visibility: hidden; }
+    
+}
+
+@keyframes navLinksFade{
+    from{ opacity: 0; transform: translateX(50px);}
+    to{opacity: 1;transform: translateX(0px); }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+   opacity: 0;
+    
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}

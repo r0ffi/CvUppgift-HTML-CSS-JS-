@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="sv">
+<head>       
+    <meta charset="UTF-8">
+    <!-- länkar till min css fil -->
+    <link rel="stylesheet" href="style.css"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0 "/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- importerat google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <title>Rofia</title>
+</head>
+<body>
+    <nav class="rubrik">
+        <div class="logo">
+            <h4>CV</h4>
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="index.html" class="links">Home</a></li>
+            <li><a href="cv.html" class="links">CV</a></li> 
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <h1>Rofia Ronja Roodkhaneh</h1>
+<!-- infogat bild med id -->
+<img id="rofiacvbild" src="bilder/rofiacvbild.jpg"/>
+
+
+
+    <!-- javascript för att dölja och visa min div med arbetsliverfarenheter  -->
+<button id="myButton" onclick="myFunction()">Klicka mig</button>
+<!-- div element skapat med en klass och id för javascript -->
+<div id="myDIV" class="listaaverfarenheter">
+
+    <!-- h3 element skapat med ett id   -->
+<h3 id="arbetslivserfarenhet" >ARBETSLIVSERFARENHETER</h3>
+<!-- skapat en unordered list för presentation av mina tidigare yrken -->
+    <ul>
+        <li>Dufry Arlanda (taxfree shop), Arlanda - säljare</li>
+        <p>aug-2021 - sep 2022</p>
+        <li>Clas Ohlson, Kista galleria - säljare</li>
+        <p>sep-2019 - juli 2021</p>
+        <li>Footlocker, Mall of Scandinavia - säljare</li>
+        <p>feb 2016 - juli 2022</p>
+        <li>SOOK, Mall of Scandinavia - säljare</li>
+        <p>aug-2021 - sep 2022</p>
+        <li>Friends Arena, Solna - kioskbiträde</li>
+        <p>jan 2014 - okt 2015</p>
+    </ul>
+</div>
+
+<!-- länkar till min javascript -->
+<script src="app.js"></script>
+</body>
+</html>
